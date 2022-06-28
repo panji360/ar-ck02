@@ -62,9 +62,6 @@
                         myText.innerHTML = "This is dodol"
                         break
                     
-                    case "wajik":
-                        myText.innerHTML = "This is wajik"
-                        break
                 }
 
             })
@@ -110,12 +107,6 @@
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
 
             <a-entity gltf-model=”url(models/dodol.glb)” rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
-        </a-marker>
-
-        <a-marker markerhandler type='pattern' url='textures/pattern-wajik.patt' id="wajik"
-            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
-
-            <a-entity gltf-model=”url(models/wajik.glb)” rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
         </a-marker>
 
         
