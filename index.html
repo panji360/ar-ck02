@@ -39,43 +39,14 @@
         {
             let myText = document.querySelector("#textContent")
             const element = document.querySelector('.info-text');
-            
-            // need to change to case switch
 
             this.el.addEventListener('markerFound', () => {
-
-                /*
-                if (this.el.id == "kanchil")
-                {
-                    myText.innerHTML = "You found kanchil!"
-                    element.style.backgroundColor = 'green'
-                } else if (this.el.id == "lapis")
-                {
-                    myText.innerHTML = "This is kuih lapis"
-                } else if (this.el.id == "ketan")
-                {
-                    myText.innerHTML = "This is tape ketan"
-                    element.style.backgroundColor = 'red'
-                } else if (this.el.id == "ondeh")
-                {
-                    myText.innerHTML = "This is ondeh-ondeh"
-                }  else if (this.el.id == "dodol")
-                {
-                    myText.innerHTML = "This is dodol"
-                } else if (this.el.id == "wajik")
-                {
-                    myText.innerHTML = "This is wajik"
-                } else
-                {
-                    myText.innerHTML = "Unrecognised marker"
-                }
-                */
 
                 switch (this.el.id)
                 {
                     case "kanchil":
                         myText.innerHTML = "You found kanchil!"
-                        element.style.backgroundColor = 'green'
+                        element.style.backgroundColor = 'rgba(15, 185, 23, 0.8)'
                         break
                     
                     case "lapis":
@@ -84,7 +55,7 @@
                     
                     case "ketan":
                         myText.innerHTML = "This is tape ketan. You found the poison!"
-                        element.style.backgroundColor = 'red'
+                        element.style.backgroundColor = 'rgba(177, 34, 15, 0.8)'
                         break
                     
                     case "ondeh":
