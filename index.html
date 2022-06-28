@@ -38,7 +38,7 @@
         init: function () 
         {
             let myText = document.querySelector("#textContent")
-            
+            const element = document.querySelector('.info-text');
             
             // need to change to case switch
 
@@ -46,12 +46,14 @@
                 if (this.el.id == "kanchil")
                 {
                     myText.innerHTML = "You found kanchil!"
+                    element.style.backgroundColor = 'green'
                 } else if (this.el.id == "lapis")
                 {
                     myText.innerHTML = "This is kuih lapis"
                 } else if (this.el.id == "ketan")
                 {
                     myText.innerHTML = "This is tape ketan"
+                    element.style.backgroundColor = 'red'
                 } else if (this.el.id == "ondeh")
                 {
                     myText.innerHTML = "This is ondeh-ondeh"
