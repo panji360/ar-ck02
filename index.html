@@ -111,6 +111,9 @@
             btn.setAttributeNode(btnAtt)
             btn.appendChild(info)
 
+            var modal = document.getElementById("myModal");
+            var modalContent = document.getElementById("words");
+
             this.el.addEventListener('markerFound', () => {
 
                 switch (this.el.id)
@@ -123,6 +126,9 @@
                     case "lapis":
                         myText.innerHTML = "This is kuih lapis  "
                         myText.appendChild(btn)
+                        btn.onclick = function() {
+                            modal.style.display = "block";
+                        }
                         break
                     
                     case "ketan":
@@ -159,6 +165,17 @@
 
     <div class="info-text" id="textBox">
         <div><p id="textContent">Please scan a marker</p></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="words">whoo</p>
+        </div>
+  
     </div>
 
     <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;' 
