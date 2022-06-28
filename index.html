@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR for Candra Kirana Scene 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
 <!-- include ar.js for A-Frame -->
@@ -39,8 +40,8 @@
         {
             let myText = document.querySelector("#textContent")
             const element = document.querySelector('.info-text')
-            let btn = document.createElement("span");
-            btn.innerHTML = "(i)"
+            let btn = document.createElement("span")
+            btn.innerHTML = "<i class='fa fa-info-circle'></i>"
 
             this.el.addEventListener('markerFound', () => {
 
