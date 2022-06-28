@@ -31,6 +31,15 @@
         color: white;
     }
 
+    .btn {
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 50%;
+        font-size: 24px;
+    }
+
 </style>
 
 <script>
@@ -40,8 +49,19 @@
         {
             let myText = document.querySelector("#textContent")
             const element = document.querySelector('.info-text')
-            let btn = document.createElement("button")
-            btn.innerHTML = "<i class='fa fa-info-circle'></i>"
+            
+            const btn = document.createElement("span")
+            const info = document.createElement("i")
+    
+            const btnAtt = document.createAttribute("class")
+            btnAtt.value = "btn"
+    
+            const iAtt = document.createAttribute("class")
+            iAtt.value = "fa fa-info-circle"
+    
+            info.setAttributeNode(iAtt)
+            btn.setAttributeNode(btnAtt)
+            btn.appendChild(info)
 
             this.el.addEventListener('markerFound', () => {
 
@@ -53,22 +73,23 @@
                         break
                     
                     case "lapis":
-                        myText.innerHTML = "This is kuih lapis"
+                        myText.innerHTML = "This is kuih lapis  "
                         myText.appendChild(btn)
                         break
                     
                     case "ketan":
-                        myText.innerHTML = "You found the poison! This is tape ketan."
+                        myText.innerHTML = "You found the poison! This is tape ketan.  "
                         element.style.backgroundColor = 'rgba(177, 34, 15, 0.8)'
+                        myText.appendChild(btn)
                         break
                     
                     case "dodol":
-                        myText.innerHTML = "This is dodol"
+                        myText.innerHTML = "This is dodol  "
                         myText.appendChild(btn)
                         break
                     
                     case "ondeh":
-                        myText.innerHTML = "This is ondeh-ondeh"
+                        myText.innerHTML = "This is ondeh-ondeh  "
                         myText.appendChild(btn)
                         break
                     
