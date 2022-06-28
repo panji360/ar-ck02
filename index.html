@@ -83,28 +83,28 @@
     </div>
 
     <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;' 
-        renderer="colorManagement: true; logarithmicDepthBuffer: true" vr-mode-ui="enabled: false" gesture-detector>
+        renderer="colorManagement: true; logarithmicDepthBuffer: true" vr-mode-ui="enabled: false" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/" gesture-detector>
 
         <a-marker markerhandler type='pattern' url='textures/pattern-kanchil.patt' id="kanchil"
-            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 
             <a-entity gltf-model=”url(models/kanchil.glb)” scale="0.6 0.6 0.6" rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
         </a-marker>
 
         <a-marker markerhandler type='pattern' url='textures/pattern-kueh-lapis.patt' id="lapis"
-            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 
             <a-entity gltf-model=”url(models/kueh-lapis.glb)” scale="0.5 0.5 0.5" rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
         </a-marker>
 
         <a-marker markerhandler type='pattern' url='textures/pattern-tape-ketan.patt' id="ketan"
-            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 
             <a-entity gltf-model=”url(models/tape-ketan.glb)” rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
         </a-marker>
 
         <a-marker markerhandler type='pattern' url='textures/pattern-dodol.patt' id="dodol"
-            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 
             <a-entity gltf-model=”url(models/dodol.glb)” rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
         </a-marker>
