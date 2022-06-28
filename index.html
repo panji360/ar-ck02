@@ -58,10 +58,6 @@
                         element.style.backgroundColor = 'rgba(177, 34, 15, 0.8)'
                         break
                     
-                    case "ondeh":
-                        myText.innerHTML = "This is ondeh-ondeh"
-                        break
-                    
                     case "dodol":
                         myText.innerHTML = "This is dodol"
                         break
@@ -90,7 +86,7 @@
     </div>
 
     <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;' 
-        renderer="colorManagement: true; logarithmicDepthBuffer: true" vr-mode-ui="enabled: false" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/" gesture-detector>
+        renderer="colorManagement: true; logarithmicDepthBuffer: true" vr-mode-ui="enabled: false" gesture-detector>
 
         <a-marker markerhandler type='pattern' url='textures/pattern-kanchil.patt' id="kanchil"
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
@@ -108,12 +104,6 @@
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
 
             <a-entity gltf-model=”url(models/tape-ketan.glb)” rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
-        </a-marker>
-
-        <a-marker markerhandler type='pattern' url='textures/pattern-ondeh2.patt' id="ondeh"
-            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/">
-
-            <a-entity gltf-model=”url(models/ondeh.glb)” rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
         </a-marker>
 
         <a-marker markerhandler type='pattern' url='textures/pattern-dodol.patt' id="dodol"
