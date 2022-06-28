@@ -38,7 +38,9 @@
         init: function () 
         {
             let myText = document.querySelector("#textContent")
-            const element = document.querySelector('.info-text');
+            const element = document.querySelector('.info-text')
+            let btn = document.createElement("span");
+            btn.innerHTML = "(i)"
 
             this.el.addEventListener('markerFound', () => {
 
@@ -51,19 +53,22 @@
                     
                     case "lapis":
                         myText.innerHTML = "This is kuih lapis"
+                        myText.appendChild(btn)
                         break
                     
                     case "ketan":
-                        myText.innerHTML = "This is tape ketan. You found the poison!"
+                        myText.innerHTML = "You found the poison! This is tape ketan."
                         element.style.backgroundColor = 'rgba(177, 34, 15, 0.8)'
                         break
                     
                     case "dodol":
                         myText.innerHTML = "This is dodol"
+                        myText.appendChild(btn)
                         break
                     
                     case "ondeh":
                         myText.innerHTML = "This is ondeh-ondeh"
+                        myText.appendChild(btn)
                         break
                     
                 }
