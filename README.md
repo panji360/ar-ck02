@@ -1,1 +1,1 @@
-# ar-ck02
+# AR interactions for Candra Kirana scene 2
