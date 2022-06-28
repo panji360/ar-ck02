@@ -62,6 +62,10 @@
                         myText.innerHTML = "This is dodol"
                         break
                     
+                    case "dodol":
+                        myText.innerHTML = "This is ondeh-ondeh"
+                        break
+                    
                 }
 
             })
@@ -107,6 +111,12 @@
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 
             <a-entity gltf-model=”url(models/dodol.glb)” rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
+        </a-marker>
+
+        <a-marker markerhandler type='pattern' url='textures/pattern-dodol.patt' id="ondeh"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+
+            <a-entity gltf-model=”url(models/ondeh.glb)” rotation="-90 0 0" class="clickable" gesture-handler></a-entity>
         </a-marker>
 
         
