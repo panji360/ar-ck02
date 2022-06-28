@@ -120,36 +120,78 @@
                 switch (this.el.id)
                 {
                     case "kanchil":
-                        myText.innerHTML = "You found kanchil!"
-                        element.style.backgroundColor = 'rgba(15, 185, 23, 0.8)'
+                        element.style.backgroundColor = 'rgba(15, 185, 23, 0.8)'    
+                        myText.innerHTML = "You found kanchil! This one's name is Puspa"
                         break
                     
                     case "lapis":
-                        myText.innerHTML = "This is kuih lapis  "
+                        element.style.backgroundColor = 'rgba(15, 61, 185, 0.8)'
+                        myText.innerHTML = "Not the poison! This is kuih lapis  "
                         myText.appendChild(btn)
                         btn.onclick = function() {
                             modal.style.display = "block"
                         }
-                        modalContent.innerHTML = "yummy!"
+                        modalContent.innerHTML = "kuih lapis is delicious!"
                         span.onclick = function() {
                             modal.style.display = "none";
+                        }
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                            modal.style.display = "none";
+                            }
                         }
                         break
                     
                     case "ketan":
-                        myText.innerHTML = "You found the poison! This is tape ketan.  "
                         element.style.backgroundColor = 'rgba(177, 34, 15, 0.8)'
+                        myText.innerHTML = "You found the poison! This is tapai pulut.  "
                         myText.appendChild(btn)
+                        btn.onclick = function() {
+                            modal.style.display = "block"
+                        }
+                        modalContent.innerHTML = "Also known as \"tape ketan\" in Javanese!"
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                            modal.style.display = "none";
+                            }
+                        }
                         break
                     
                     case "dodol":
-                        myText.innerHTML = "This is dodol  "
+                        myText.innerHTML = "Not the poison! This is dodol  "
                         myText.appendChild(btn)
+                        btn.onclick = function() {
+                            modal.style.display = "block"
+                        }
+                        modalContent.innerHTML = "This kuih already existed since Majapahit era!"
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                            modal.style.display = "none";
+                            }
+                        }
                         break
                     
                     case "ondeh":
-                        myText.innerHTML = "This is ondeh-ondeh  "
+                        myText.innerHTML = "Not the poison! This is ondeh-ondeh  "
                         myText.appendChild(btn)
+                        btn.onclick = function() {
+                            modal.style.display = "block"
+                        }
+                        modalContent.innerHTML = "Green, round, and yummy!"
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                            modal.style.display = "none";
+                            }
+                        }
                         break
                     
                 }
@@ -178,7 +220,7 @@
     <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p id="words">whoo</p>
+            <p id="words">Yummy!</p>
         </div>
   
     </div>
